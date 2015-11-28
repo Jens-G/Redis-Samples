@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Features", "Features\Features.csproj", "{F068EE41-D867-4703-81BC-C319446B8D57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thrift", "E:\D\TPCPP\Thrift\wc-XE-all\trunk\lib\csharp\src\Thrift.csproj", "{499EB63C-D74C-47E8-AE48-A2FC94538E9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaling", "Scaling\Scaling.csproj", "{31AB6E48-E4BD-4E4E-A8F3-471ECD93E2C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Log Output|Any CPU = Log Output|Any CPU
+		Mono|Any CPU = Mono|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Verbose|Any CPU = Verbose|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F068EE41-D867-4703-81BC-C319446B8D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F068EE41-D867-4703-81BC-C319446B8D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F068EE41-D867-4703-81BC-C319446B8D57}.Log Output|Any CPU.ActiveCfg = Release|Any CPU
+		{F068EE41-D867-4703-81BC-C319446B8D57}.Log Output|Any CPU.Build.0 = Release|Any CPU
+		{F068EE41-D867-4703-81BC-C319446B8D57}.Mono|Any CPU.ActiveCfg = Release|Any CPU
+		{F068EE41-D867-4703-81BC-C319446B8D57}.Mono|Any CPU.Build.0 = Release|Any CPU
+		{F068EE41-D867-4703-81BC-C319446B8D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F068EE41-D867-4703-81BC-C319446B8D57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F068EE41-D867-4703-81BC-C319446B8D57}.Verbose|Any CPU.ActiveCfg = Release|Any CPU
+		{F068EE41-D867-4703-81BC-C319446B8D57}.Verbose|Any CPU.Build.0 = Release|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Log Output|Any CPU.ActiveCfg = Release|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Log Output|Any CPU.Build.0 = Release|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Mono|Any CPU.ActiveCfg = Release|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Mono|Any CPU.Build.0 = Release|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Verbose|Any CPU.ActiveCfg = Release|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Verbose|Any CPU.Build.0 = Release|Any CPU
+		{31AB6E48-E4BD-4E4E-A8F3-471ECD93E2C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31AB6E48-E4BD-4E4E-A8F3-471ECD93E2C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31AB6E48-E4BD-4E4E-A8F3-471ECD93E2C5}.Log Output|Any CPU.ActiveCfg = Release|Any CPU
+		{31AB6E48-E4BD-4E4E-A8F3-471ECD93E2C5}.Log Output|Any CPU.Build.0 = Release|Any CPU
+		{31AB6E48-E4BD-4E4E-A8F3-471ECD93E2C5}.Mono|Any CPU.ActiveCfg = Release|Any CPU
+		{31AB6E48-E4BD-4E4E-A8F3-471ECD93E2C5}.Mono|Any CPU.Build.0 = Release|Any CPU
+		{31AB6E48-E4BD-4E4E-A8F3-471ECD93E2C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31AB6E48-E4BD-4E4E-A8F3-471ECD93E2C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31AB6E48-E4BD-4E4E-A8F3-471ECD93E2C5}.Verbose|Any CPU.ActiveCfg = Release|Any CPU
+		{31AB6E48-E4BD-4E4E-A8F3-471ECD93E2C5}.Verbose|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
