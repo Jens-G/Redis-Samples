@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Scaling</RootNamespace>
     <AssemblyName>Scaling</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,9 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="StackExchange.Redis">
-      <HintPath>E:\D\TPCPP\X_ThirdParty\Redis.StackExchange\StackExchange.Redis_Net40\bin\Debug\StackExchange.Redis.dll</HintPath>
+      <HintPath>..\..\..\..\..\X_ThirdParty\Redis.StackExchange\src\StackExchange.Redis\bin\Debug\net461\StackExchange.Redis.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System" />
@@ -59,9 +63,13 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="E:\D\TPCPP\Thrift\wc-XE-all\trunk\lib\csharp\src\Thrift.csproj">
-      <Project>{499eb63c-d74c-47e8-ae48-a2fc94538e9d}</Project>
-      <Name>Thrift</Name>
+    <ProjectReference Include="..\..\..\..\..\Thrift\wc-XE-all\wc-JensG-haxe\lib\csharp\src\Thrift.45.csproj">
+      <Project>{ebce35da-cf6a-42bc-a357-a9c09b534299}</Project>
+      <Name>Thrift.45</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{e101ae07-5999-4f7d-9125-6d20c8d5cdc0}</Project>
+      <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

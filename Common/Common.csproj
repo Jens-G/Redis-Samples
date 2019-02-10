@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="StackExchange.Redis">
+      <HintPath>..\..\..\..\..\X_ThirdParty\Redis.StackExchange\src\StackExchange.Redis\bin\Debug\net461\StackExchange.Redis.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

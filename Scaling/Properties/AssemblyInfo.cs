@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Redis Samples")]
-[assembly: AssemblyCopyright("Copyright © Jens Geyer  2015")]
+[assembly: AssemblyCopyright("Copyright © Jens Geyer 2015-2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

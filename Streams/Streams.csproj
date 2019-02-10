@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F068EE41-D867-4703-81BC-C319446B8D57}</ProjectGuid>
+    <ProjectGuid>{C319446B-81BC-D867-4703-8DF068EE4157}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Features</RootNamespace>
-    <AssemblyName>Features</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>Streams</RootNamespace>
+    <AssemblyName>Streams</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -49,14 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Test\TestHash.cs" />
-    <Compile Include="Test\TestSortedSimple.cs" />
-    <Compile Include="Test\TestTransactions.cs" />
-    <Compile Include="Test\TestSortedSets.cs" />
-    <Compile Include="Test\TestSets.cs" />
-    <Compile Include="Test\TestBitmaps.cs" />
-    <Compile Include="Test\TestFloatsInts.cs" />
-    <Compile Include="Test\TestNumbers.cs" />
+    <Compile Include="Test\TestConsumerGroups.cs" />
+    <Compile Include="Test\TestStreams.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\Tools.cs" />

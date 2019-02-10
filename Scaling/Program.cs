@@ -14,41 +14,20 @@ namespace Scaling
     {
         static private ConnectionMultiplexer Redis = null;
 
-        static private ConnectionMultiplexer InitializeConnection()
-        {
-            Console.Write("Connecting ...");
-
-            // TODO: make endpoints configurable
-            var options = new ConfigurationOptions();
-            options.EndPoints.Add("localhost");  // default port
-            options.EndPoints.Add("localhost", 7000);  // cluster ports as configured
-            options.EndPoints.Add("localhost", 7001);
-            options.EndPoints.Add("localhost", 7002);
-            options.Password = ConfigurationManager.AppSettings["Redis.Password"];
-            var redis = ConnectionMultiplexer.Connect(options);
-
-            Console.WriteLine("\rEndpoints available:              ");
-            foreach (var ep in redis.GetEndPoints(false))
-                if (ep.AddressFamily != System.Net.Sockets.AddressFamily.Unspecified)
-                    Console.WriteLine("- " + ep);
-            Console.WriteLine("");
-
-            return redis;
-        }
-
-
         static void Main(string[] args)
         {
             try
             {
                 Console.Title = "Redis Workload scaling and cluster demo";
-                Redis = InitializeConnection();
+                Redis = Common.Redis.InitializeConnection(ConfigurationManager.AppSettings["Redis.Password"]);
 
                 Console.WriteLine("Run as ...");
                 Console.WriteLine("  1 = (c)lient");
                 Console.WriteLine("  2 = (w)orker");
                 Console.WriteLine("  3 = (m)onitor");
                 Console.WriteLine("  or (q)uit");
+                Console.WriteLine();
+                Console.Write("> ");
 
                 while (true)
                 {

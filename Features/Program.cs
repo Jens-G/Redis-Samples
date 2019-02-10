@@ -15,35 +15,12 @@ namespace Features
     {
         static private ConnectionMultiplexer Redis = null;
 
-        static private ConnectionMultiplexer InitializeConnection()
-        {
-            Console.Write("Connecting ...");
-
-            // TODO: make endpoints configurable
-            var options = new ConfigurationOptions();
-            options.EndPoints.Add("localhost");  // default port
-            options.EndPoints.Add("localhost", 7000);  // cluster ports as configured
-            options.EndPoints.Add("localhost", 7001);
-            options.EndPoints.Add("localhost", 7002);
-            options.Password = ConfigurationManager.AppSettings["Redis.Password"]; 
-            var redis = ConnectionMultiplexer.Connect(options);
-
-            Console.WriteLine("\rEndpoints available:              ");
-            foreach (var ep in redis.GetEndPoints(false))
-                if (ep.AddressFamily != System.Net.Sockets.AddressFamily.Unspecified)
-                    Console.WriteLine("- " + ep);
-            Console.WriteLine("");
-
-            return redis;
-        }
-
-
         static void Main(string[] args)
         {
             try
             {
                 Console.Title = "Redis Features Showcase";
-                Redis = InitializeConnection();
+                Redis = Common.Redis.InitializeConnection(ConfigurationManager.AppSettings["Redis.Password"]);
 
                 Console.WriteLine("Pick one:");
                 Console.WriteLine("  1 - Numbers");
@@ -54,7 +31,8 @@ namespace Features
                 Console.WriteLine("  6 - Sorted Sets (airports)");
                 Console.WriteLine("  7 - Transactions");
                 Console.WriteLine("  8 - Hashes");
-                Console.WriteLine("");
+                Console.WriteLine();
+                Console.Write("> ");
 
                 while (true)
                 {
